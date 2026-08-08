@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pinch to Draw — TensorFlow.js</title>
+    <link rel="stylesheet" href="/src/draw.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Pinch to Draw</h1>
+      <p id="status">Loading model…</p>
+      <div id="stage">
+        <video id="video" playsinline muted></video>
+        <canvas id="overlay"></canvas>
+      </div>
+      <p class="hint">
+        Clench your left hand into a fist to draw with your other hand's
+        index finger; open the left hand to stop. Point at a color box and
+        hold for a moment to switch colors.
+      </p>
+    </main>
+    <script type="module" src="/src/draw.js"></script>
+  </body>
+</html>
